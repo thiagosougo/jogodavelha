@@ -13,7 +13,7 @@ let player2 = 0;
 //adicionando eveto click aos boxes
 for(let i = 0; i < boxes.length; i++){
 
-    //quando algume clica na caixa
+    //quando alguem clica na caixa
     boxes[i].addEventListener("click", function(){
 
     let el = checkEl(player1, player2);
@@ -225,9 +225,9 @@ function declareWinner(winner){
     messageContainer.classList.remove("hide");
 
     //esconde msg
-    setTimeout(function(){
+   setTimeout(function(){
         messageContainer.classList.add("hide");
-    }, 3000);
+    }, 3000); 
 
     //zera jogadas
     player1 = 0;
@@ -263,7 +263,7 @@ function computerPlay(){
             }
         }
     }
-        if(counter == 0 && filled < 9){
+        if(counter == 0 && filled == 9){
             computerPlay();
         }
 }

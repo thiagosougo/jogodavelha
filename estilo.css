@@ -132,3 +132,23 @@ h1{
     font-weight: 900;
 }
 
+@media screen and (max-width: 480px){
+    #buttons-container button{
+        width: 200px;
+        margin-top: 20px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #message p{
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        top: 150px;
+        max-width: 90%;
+        text-align: center
+    }
+    body{width: 100%}
+}
