@@ -257,13 +257,12 @@ function computerPlay(){
                 counter++;
                 break;
             }
-            //checa quantos estao preenchidos
+            }//checa quantos estao preenchidos
              else{
                 filled++;
             }
         }
-    }
-        if(counter == 0 && filled == 9){
+        if(counter == 0 && filled < 9){
             computerPlay();
         }
-}
+    }
